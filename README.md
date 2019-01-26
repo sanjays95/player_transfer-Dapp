@@ -48,7 +48,7 @@ Open Ganache that you downloaded and installed. This will start your local block
 
 ### Step 7. Run Tests
 - Start Ganache and open a new local blockchain instance
-`truffle test`
+- Run `truffle test`
 
 ### User-Stories
 Durring the transfer season, a club would wish to buy a new player or sell a player. The club owner logs into Dapp and registers his/her club 
@@ -60,3 +60,9 @@ transfering the appropriate the offered value in ethers.
 In the same fashion, club owners can sell their player by adding the player's attributes(value,weekly wage,year's left). Interested clubs will offer 
 new contract upon which it can be accepted if interested.
 
+### Test Net Interaction
+
+- Visit [Football Transfer](https://soccer-playertransfer.herokuapp.com/) (Deployed using Heroku)
+- Ensure you have a Metamask and Rinkeby account.
+- To obtain Test ethers, visit (https://faucet.rinkeby.io/)
+- Voila! You can now register and buy your favourite Players.
