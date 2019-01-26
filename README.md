@@ -7,7 +7,7 @@ has the right to move from once club to another. Durring this period, hefty amou
 Due to this, there are considerable ineffeiciencies surrounding cross-currency transactions and lack of financial transparency in the football 
 industry. Blockchain Technology and Tokenisations has the potential to make this process more effecient.
 
-Another Use Case : [De Gea Failed Transfer] (https://www.gqmiddleeast.com/top-football-clubs-set-to-embrace-blockchain-technology)
+Another Use Case : [De Gea Failed Transfer](https://www.gqmiddleeast.com/top-football-clubs-set-to-embrace-blockchain-technology)
 
 This project is a set of smart contracts that enables the transfer of soccer players between one club to another 
 durring the Transfer Market Season using Ethereum. 
