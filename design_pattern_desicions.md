@@ -22,4 +22,4 @@ is owned by the player's current club
 
 This contract handles the complexity wherein a player can be transferred from one club to another
 
-![Contract Design](https://github.com/sanjays95/player_transfer-Dapp/contract_design.jpg)
+![Contract Design](https://github.com/sanjays95/player_transfer-Dapp/blob/master/contract_design.jpg?raw=true)
