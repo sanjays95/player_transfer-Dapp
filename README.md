@@ -7,7 +7,7 @@ has the right to move from once club to another. Durring this period, hefty amou
 Due to this, there are considerable ineffeiciencies surrounding cross-currency transactions and lack of financial transparency in the football 
 industry. Blockchain Technology and Tokenisations has the potential to make this process more effecient.
 
-Another Use Case : [De Gea Failed Transfer](https://www.gqmiddleeast.com/top-football-clubs-set-to-embrace-blockchain-technology)
+Another Use Case : [De Gea's Failed Transfer](https://www.gqmiddleeast.com/top-football-clubs-set-to-embrace-blockchain-technology)
 
 This project is a set of smart contracts that enables the transfer of soccer players between one club to another 
 durring the Transfer Market Season using Ethereum. 
@@ -20,7 +20,7 @@ This project was developed for the Consensys Academy Developer Program Final Pro
 Install the below pre requisites to get the app running
 
 - NPM (https://nodejs.org)
-- Truffle verion 4.1.4  `npm install truffle@4.1.4` (https://www.npmjs.com/package/truffle/v/4.1.14)
+- Truffle verion 4.1.14  `npm install truffle@4.1.14` (https://www.npmjs.com/package/truffle/v/4.1.14)
 - Ganache  (http://truffleframework.com/ganache/)
 - Metamask (https://metamask.io/)
 
