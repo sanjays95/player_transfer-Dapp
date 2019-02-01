@@ -3,14 +3,14 @@
 ## Overview
 
 Football is a billion dollar industry and one of the most popular sports in the world. Transfer season is the time period where a player
-has the right to move from once club to another. Durring this period, hefty amout of money is involved across different countries.
+has the right to move from one club to another. Durring this period, hefty amout of money is involved across different countries.
 Due to this, there are considerable ineffeiciencies surrounding cross-currency transactions and lack of financial transparency in the football 
 industry. Blockchain Technology and Tokenisations has the potential to make this process more effecient.
 
 Another Use Case : [De Gea's Failed Transfer](https://www.gqmiddleeast.com/top-football-clubs-set-to-embrace-blockchain-technology)
 
 This project is a set of smart contracts that enables the transfer of soccer players between one club to another 
-durring the Transfer Market Season using Ethereum. 
+durring the Transfer Market Season using Ethereum protocols. 
 Each player added by a particular club has various attributes, that is represented by an ERC 721 token. 
 
 This project was developed for the Consensys Academy Developer Program Final Project.
@@ -37,7 +37,7 @@ npm install
 Open Ganache that you downloaded and installed. This will start your local blockchain instance.
 
 ### Step 4. Compile & Deploy Transfer Smart Contract
-`truffle migrate --reset` You must migrate the election smart contract each time your restart ganache.
+`truffle migrate --reset` You must migrate the smart contract each time your restart ganache.
 
 ### Step 5. Configure Metamask
 - Connect Metamask to the local Ethereum blockchain provided by Ganache.
@@ -54,9 +54,9 @@ Open Ganache that you downloaded and installed. This will start your local block
 Durring the transfer season, a club would wish to buy a new player or sell a player. The club owner logs into Dapp and registers his/her club 
 using the clubname and the address of the club. To buy a player, the clubowner can view all the players in the transfer list. These players 
 are added by other club using their respective club name and owner. On finding a desired player, the clubowner Requests an offer for the player 
-with a new cost and the number of years in the contract. If the player's current club is staisfied by the new offer (mainly new cost), the player's 
+with a new cost and the number of years in the contract. If the player's current club is satisfied by the new offer (mainly new cost), the player's 
 current club can accept the offer. Once the player's current club has accepted the contract/offer, the clubowner is requested to Finalise the deal by 
-transfering the appropriate the offered value in ethers. 
+transfering the appropriate offered value in ethers. 
 In the same fashion, club owners can sell their player by adding the player's attributes(value,weekly wage,year's left). Interested clubs will offer 
 new contract upon which it can be accepted if interested.
 
