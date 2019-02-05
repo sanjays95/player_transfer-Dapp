@@ -4,7 +4,8 @@ contract ('Transfer', function(accounts){
 	const mcfc = accounts[1];
 	const fcb = accounts[2];
 	var mcfcAddress;
-	
+    
+    //register a club using an account address 1
 	it('should register a club', async()=>{
 		const tr = await Transfer.deployed();
 		
@@ -23,6 +24,7 @@ contract ('Transfer', function(accounts){
 		assert.isTrue(eventEmitted,"register club did not emmit an event");
 	})
 
+    //re-register a club with an already resgistered addresss
     it('register an already registered club - FAIL', async()=>{
 		const tr = await Transfer.deployed();
 		var eventEmitted;
@@ -33,13 +35,13 @@ contract ('Transfer', function(accounts){
                 eventEmitted = true;
             }
         }catch(err){
-            console.log(err);
             eventEmitted = false;
         }
 
         assert.isFalse(eventEmitted,"Two clubs with the same name/address has been registered")
 	})
 	
+    //add a player by a registered club (account address 2) 
 	it('add a player from club2 (FCB) and create a token', async()=>{
 		const tr = await Transfer.deployed();
 
@@ -76,6 +78,7 @@ contract ('Transfer', function(accounts){
         assert.equal(owner,fcb,"token owner not transfered")
 	})
 
+    // send contract offer to a player's club from a different club address (account addresss 1)
     it('should send a contract offer for the player', async()=>{
         const tr = await Transfer.deployed();
         var offer_value = web3.toWei(5,'ether');
@@ -99,6 +102,7 @@ contract ('Transfer', function(accounts){
         assert.equal(result[5],4,"contract length not matching");
     })	
 
+    //send offer to the players current club from the same club (should fail)
     it("provide offer to a player from its current club - FAIL", async()=>{
         var offer_value = web3.toWei(5,'ether');
         var eventEmitted;
@@ -116,6 +120,7 @@ contract ('Transfer', function(accounts){
         assert.isFalse(eventEmitted,"request offer sent by the player's current club");
     })
 
+    //accept contract for the player
     it('accept player contract requested by a club', async()=>{
         const tr = await Transfer.deployed();
         var eventEmitted = false;
@@ -139,6 +144,7 @@ contract ('Transfer', function(accounts){
         assert.equal(owner,mcfc,"token owner while accepting a contract")
     })
 
+    //unable to send contract to a player that has already acceppted another offer
     it("should not send a contract to a Transfer Accepted player - FAIL",async()=>{
         const tr = await Transfer.deployed();
         var eventEmitted = false;
@@ -155,6 +161,7 @@ contract ('Transfer', function(accounts){
         assert.isFalse(eventEmitted,"request offer sent to a player that accepted another contract+");
     })
 
+    //transfer funds from one club address to the other when a player is bought
     it("finalise the deal for the player by transfering the required funds", async()=>{
         const tr = await Transfer.deployed();
         var wage = web3.toWei(1.5,"ether");
